@@ -36,7 +36,7 @@ nav {
 }
 
 nav .logo {
-  width: fit-content;
+ min-width: 13rem;
   height: 100%;
 }
 nav .logo img {
@@ -48,11 +48,15 @@ nav .menu ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-left: 0;
 }
 nav .menu ul li {
   list-style: none;
   width: max-content;
   margin-left: 2rem;
+}
+nav .menu ul li:first-child{
+  margin-left: 0;
 }
 nav a {
   text-decoration: none;
@@ -136,7 +140,7 @@ main button:nth-child(2) {
         width: 50%;
       }
       main .text{
-          padding-right: 4.5rem;
+         margin-right: 6.8rem;
       }
 
 }
@@ -160,6 +164,7 @@ main{
     height: 100%;
 }
 main .text {
+  padding-right: 0;
     width: 100%;
     height: fit-content;
     justify-content: flex-start;
@@ -169,6 +174,6 @@ main .text {
     height: 100%;
     width: 100%;
     align-items: flex-start;
-    padding-right: 4rem;
+    padding-right: 0;
   }
 }
