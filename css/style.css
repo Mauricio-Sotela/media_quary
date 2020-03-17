@@ -85,7 +85,7 @@ main .phones img {
 
 .black {
   position: absolute;
-  right: 20%;
+  right: 29%;
   transform: translateX(50px);
   bottom: center;
   transform: translateY(5%);
@@ -142,6 +142,9 @@ main button:nth-child(2) {
 }
 .main_container {
     overflow:scroll;
+  }
+  .main_container::-webkit-scrollbar{
+    display: none;
   }
 
 main{
