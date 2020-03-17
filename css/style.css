@@ -24,7 +24,6 @@ body {
   width: 60vw;
   height: 100vh;
   margin: 0 auto;
-;
 }
 
 nav {
@@ -36,7 +35,7 @@ nav {
 }
 
 nav .logo {
- min-width: 13rem;
+  min-width: 13rem;
   height: 100%;
 }
 nav .logo img {
@@ -55,14 +54,14 @@ nav .menu ul li {
   width: max-content;
   margin-left: 2rem;
 }
-nav .menu ul li:first-child{
+nav .menu ul li:first-child {
   margin-left: 0;
 }
 nav a {
   text-decoration: none;
   color: white;
 }
-nav>img{
+nav > img {
   display: none;
 }
 
@@ -132,45 +131,49 @@ main button:nth-child(2) {
   background-color: #3397db;
 }
 
+@media only screen and (max-width: 1200px) {
+  .main_container {
+    width: 80vw;
+  }
+}
 @media only screen and (max-width: 900px) {
-    .main_container {
-        width: 90vw;
-      }
-      main .phones {
-        width: 50%;
-      }
-      main .text{
-         margin-right: 6.8rem;
-      }
-
+  .main_container {
+    width: 90vw;
+  }
+  main .phones {
+    width: 50%;
+  }
+  main .text {
+    margin-right: 6.8rem;
+  }
 }
 @media only screen and (max-width: 600px) {
-.menu{
+  .menu {
     display: none;
-}
-nav>img{
-  display: inherit;
-  width: 4rem;
-}
-.main_container {
-    overflow:scroll;
   }
-  .main_container::-webkit-scrollbar{
+  nav > img {
+    display: inherit;
+    width: 4rem;
+  }
+  .main_container {
+    overflow: scroll;
+  }
+  .main_container::-webkit-scrollbar {
     display: none;
   }
 
-main{
+  main {
     display: block;
     height: 100%;
-}
-main .text {
-  padding-right: 0;
+  }
+  main .text {
+    padding-right: 0;
     width: 100%;
     height: fit-content;
     justify-content: flex-start;
   }
   main .phones {
-      margin-top: 2rem;
+    margin-top: 2rem;
     height: 100%;
     width: 100%;
     align-items: flex-start;
