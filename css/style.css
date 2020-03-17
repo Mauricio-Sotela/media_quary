@@ -132,7 +132,7 @@ main button:nth-child(2) {
         width: 50%;
       }
       main .text{
-          padding-right: 4rem;
+          padding-right: 4.5rem;
       }
 
 }
@@ -158,5 +158,6 @@ main .text {
     height: 100%;
     width: 100%;
     align-items: flex-start;
+    padding-right: 4rem;
   }
 }
