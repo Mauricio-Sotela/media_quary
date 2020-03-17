@@ -41,6 +41,7 @@ nav .logo {
 }
 nav .logo img {
   max-width: 15vw;
+  min-width: 13rem;
 }
 
 nav .menu ul {
@@ -56,6 +57,9 @@ nav .menu ul li {
 nav a {
   text-decoration: none;
   color: white;
+}
+nav>img{
+  display: none;
 }
 
 main {
@@ -139,6 +143,10 @@ main button:nth-child(2) {
 @media only screen and (max-width: 600px) {
 .menu{
     display: none;
+}
+nav>img{
+  display: inherit;
+  width: 4rem;
 }
 .main_container {
     overflow:scroll;
