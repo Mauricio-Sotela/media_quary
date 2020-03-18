@@ -21,10 +21,10 @@
       backdrop: true,
       timer: 6000,
       timerProgressBar: true,
-      toast: true,
+      //toast: true,
       allowOutsideClick: false,
       allowEscapeKey: false,
-      allowEnterKey: false,
+      allowEnterKey: true,
       stopKeydownPropagation: true
     });
   }
