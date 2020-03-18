@@ -1,15 +1,22 @@
-const berger = document.querySelector(".m");
-console.log(berger);
 
+///////////function//////////////
+const berger = document.querySelector(".m");
 berger.addEventListener("click", () => {
   document.body.classList.toggle("berger");
 });
 
-const comprobarAncho = () => {
-  if (window.innerWidth > 601) {
+////////////function/////////////
+window.addEventListener('resize', () => {
+	 if (window.innerWidth > 601) {
     document.body.classList.add('berger');
   }
-};
-window.addEventListener('resize', () => {
-	comprobarAncho();
 });
+
+
+ ///////////function////////////////========>//not working ATM
+// window.addEventListener('scroll', () => {
+//   document.body.classList.add('berger');
+//   console.log("ggggg");
+  
+//  });
+  
