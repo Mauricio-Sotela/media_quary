@@ -32,6 +32,7 @@ nav {
   height: fit-content;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 nav .logo {
@@ -49,6 +50,7 @@ nav .menu ul {
   align-items: center;
   padding-left: 0;
 }
+
 nav .menu ul li {
   list-style: none;
   width: max-content;
@@ -148,8 +150,17 @@ main button:nth-child(2) {
   }
 }
 @media only screen and (max-width: 600px) {
-  .menu {
-    display: none;
+  nav .menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(53, 53, 53, 0.849);
+    position: absolute;
+    top: 5rem;
+    right: 4rem;
+  }
+  body.berger nav .menu ul{
+    visibility: hidden;
   }
   nav > img {
     display: inherit;
