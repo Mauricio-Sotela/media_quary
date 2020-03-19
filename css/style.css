@@ -66,6 +66,9 @@ nav a {
 nav > img {
   display: none;
 }
+nav > .wrap{
+  display: none;
+}
 
 main {
   width: 100%;
@@ -210,4 +213,54 @@ main button:nth-child(2) {
     align-items: flex-start;
     padding-right: 0;
   }
+  nav .wrap{
+    display: initial;
+  }
+}
+.wrap {
+	position: absolute;
+	top: 0rem;
+	right: 0;
+}
+
+
+
+.wrap ul {
+  list-style: none;
+	height: 50px;
+	width: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+  transition: all 250ms ease-in-out;
+  padding: 0;
+}
+
+.wrap ul li {
+	width: 100%;
+	height: 2px;
+	background: rgb(255, 255, 255);
+	transition: all 250ms ease-out;
+}
+
+.wrap ul{
+	justify-content: space-around;
+  margin-top: 10px;
+}
+
+.wrap ul li {
+	transform-origin: right;
+}
+
+.ch1{
+	transform: rotate(-45deg) translateX(1px);
+}
+
+.ch2{
+	opacity: 0;
+}
+
+.ch3{
+	transform: rotate(45deg);
 }
